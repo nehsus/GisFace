@@ -1,0 +1,7 @@
+./idea/*
+./gradle
+*.jks
+*.json
+*.properties
+./build/*
+
