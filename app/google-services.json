@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "356512809656",
+    "firebase_url": "https://offercamfinalapp-9cbeb.firebaseio.com",
+    "project_id": "offercamfinalapp-9cbeb",
+    "storage_bucket": "offercamfinalapp-9cbeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356512809656:android:4990967776c940e9",
+        "android_client_info": {
+          "package_name": "com.organization.Giscle.giscle_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356512809656-1bhhr175tnk3bc2c56p9f2sujuah7sfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organization.Giscle.giscle_app",
+            "certificate_hash": "ca0b5c7f2e8aa67acb89bd0efe34cb7bf323af74"
+          }
+        },
+        {
+          "client_id": "356512809656-de69erbsjil5al078vj66g0k8ijjrdn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organization.Giscle.giscle_app",
+            "certificate_hash": "63fbc95224e1518eb6c5249e0a552691b579921a"
+          }
+        },
+        {
+          "client_id": "356512809656-ksugb9i4dn051sphip7p4u4ikl40pqfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organization.Giscle.giscle_app",
+            "certificate_hash": "1d72699fe809226320094ed8d70b1c66fdc554cb"
+          }
+        },
+        {
+          "client_id": "356512809656-lqb9205kmbgfka6fmkedmj4358s3a8fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organization.Giscle.giscle_app",
+            "certificate_hash": "3856151d80ea5640e76800f81b41248ebd6d45ab"
+          }
+        },
+        {
+          "client_id": "356512809656-o6030qt96d0srgtv5j3nprho0pqrc0of.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organization.Giscle.giscle_app",
+            "certificate_hash": "c3af529fe56e05dbdd8c913563ada27c179ff23f"
+          }
+        },
+        {
+          "client_id": "356512809656-0ee2cae6phm36t3odh8md5dduno7kpsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organization.Giscle.giscle_app",
+            "certificate_hash": "63a98fb1b00a57e68c0459460022960cd49ba7d3"
+          }
+        },
+        {
+          "client_id": "356512809656-heqj8or1s5hva7bjpkcqi80n94aa1qp7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZEBK-Q1reirxna92itCnRjkQxNw0SiKI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356512809656-heqj8or1s5hva7bjpkcqi80n94aa1qp7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

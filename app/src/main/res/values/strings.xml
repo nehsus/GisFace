@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">OfferCam</string>
+    <!--<string name="facebook_app_id"> GISCLE APP ID IS : 272727860162162</string>-->
+    <string name="facebook_app_id">272727860162162</string>
+    <string name="fb_login_protocol_scheme">fb272727860162162</string>
+    <string name="title_activity_user_dash">User_dash</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_dashboard">UserDashboard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="description_info">Info</string>
+    <string name="permission_request">This app needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="book_my_show">Book My Show</string>
+    <string name="amazon_shopping">Amazon Shopping</string>
+    <string name="flipkart_shopping">Flipkart Shopping</string>
+    <string name="paytm_text">Paytm recharge</string>
+
+
+    <string name="privicy_1">
+        Your privacy is important to us. This privacy policy is intended to give you confidence in the privacy and security of the personal information we obtain from you whether you are using Giscle Systems, Pvt. Ltd. products such as \"OfferCam\", uploading information to one of Giscle Systems, Pvt. Ltd.\'s websites (“Websites”), such as www.giscle.com, downloading and using our applications, or merely visiting our Websites.\n
+We are not responsible for any use of your personal information you provide to third-party applications or websites that may be accessed via OfferCam or Websites. We recommend that you review the privacy policy of any third-party applications or websites that you use.
+    </string>
+    <string name="privicy_2">When you use OfferCam or the Websites, you may be asked to provide, or the application may provide us with personally identifiable information such as your name, address, date of birth, email address, telephone number, username, frequently traveled destinations, Facebook profiles, friends, and optionally address book connections. Additionally, we will collect a device identifier for the mobile device where you install OfferCam – this enables us to know that you are associated with the OfferCam account and application when you use OfferCam.  Your device identifier will be associated with each video you upload, which includes timestamp data, location data, speed, and other information about the route you drove using OfferCam.\n
+By giving us such information, you consent to our using it in the manner described in this policy.</string>
+    <string name="privicy_3">
+We use personal information to allow us to process your service requests, provide access to privileged areas of the Website, personalize your visit to our Websites, personalize your use of OfferCam, and enable us to improve the products and services we offer. We may occasionally carry out market research and send you details of services and offers that we think may be of interest to you. If you do not wish to receive such information, please email info@giscle.com or alternatively, when we send you an e-mail, it will contain a provision for you to opt out of receiving any further information from us.
+    </string>
+    <string name="privicy_4">
+        We do collect video information from the dashcam videos that you upload to our servers automatically by using the OfferCam application.  By If you do not wish to have images or video collected, please do not use OfferCam. The video and location data we collect may include personally identifiable information such as your home or work address, and you should be mindful about using OfferCam around privacy sensitive areas. We may provide information about you to our employees and agents in order to administer any accounts, products and services provided to you by Giscle Systems, Pvt. Ltd.\n
+Typically, we aggregate the data you provide in an anonymous fashion before providing this data to governments, municipalities, car companies, or any other customer of our mapping products.\n
+We may also disclose your personally identifiable information when we are required to do so by law, to cooperate with law enforcement, legal proceedings, or other investigations to prevent harm, or in connection with a merger or acquisition of our assets. This may include exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction.
+    </string>
+    <string name="privicy_5">
+        Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping tracking of your preferences, promotional campaigns, tracking our audience size and traffic patterns, and in certain other cases. We may include small graphic images in our email messages and newsletters to determine whether the messages were opened and the links were viewed.\n
+Third-party advertisers may also create and access cookies, which will be subject to their privacy policies - we accept no responsibility or liability for the use of such third parties\' cookies. If you do not wish cookies to be placed on your PC or handheld device, then they can be disabled in your web browser. The option to do so is normally found in your browser\'s \"security settings\" section. Please note that permanently disabling cookies in your browser may hinder your use of our Websites as well as other websites and interactive service.
+    </string>
+    <string name="privicy_6">
+        All security on our Websites and OfferCam is treated seriously. Where applicable, we undertake security steps, including use of SSL technology, on our back-end systems that store customer account information and to protect data transmissions. However, this is not a guarantee that such data transmissions cannot be accessed, altered or deleted due to firewall or other security software failures.
+    </string>
+    <string name="privicy_7">
+        If you have any further concerns about security, please email our Customer Service team at <u>info@giscle.com</u>
+    </string>
+
+    <string name="main_string">These Terms of Service (“Terms”) govern the relationship between you, an individual within the India and its territories and possessions, and Giscle Systems, Pvt. Ltd. (“Giscle Systems”), creator of the driving data mobile application OfferCam (“OfferCam”). By downloading and using OfferCam, you are agreeing to these Terms, which establishes a contractual relationship between you and us. If you do not agree with these Terms, do not access or use the OfferCam or any of our websites. These Terms, together with the Giscle Systems [Privacy policy] which is hereby incorporated by reference, constitute the entire agreement between you and Giscle Systems regarding your use of OfferCam. OfferCam is not intended for use outside the Indian States, and any access to OfferCam from outside the Indian States will not result in points earned and is entirely at your own risk.</string>
+    <string name="main_string_bold">
+        THESE TERMS LIMIT OUR LIABILITY TO YOU AND INCLUDE AN ARBITRATION PROVISION.  DO NOT USE OFFERCAM IF YOU DO NOT AGREE TO LIMIT OUR LIABILITY OR TO AGREE TO ARBITRATION IN THE EVENT OF A DISPUTE (E.G. NO DISPUTE RESOLUTION IN COURT SUCH AS CLASS ACTION LAWSUITS).
+    </string>
+    <string name="terms_1">
+        Giscle Systems, Pvt. Ltd. may modify these Terms (including the privacy policy) from time to time. We will text you a notification that the Terms have been updated.  All changes to the Terms will be effective 24 hours after we send the text notification unless otherwise noted.  If you do not agree to the updated Terms, do not use OfferCam after the end of the 24-hour period.  Any use of OfferCam after the 24-hour period constitutes an acceptance of the updated terms for all subsequent use of OfferCam.
+    </string>
+    <string name="terms_2">
+        By using OfferCam, you agree and understand that OfferCam records and sends location data as well as visual recordings and personally identifiable data to Giscle Systems.  This data is governed by our privacy policy, which is incorporated into the Terms and part of the agreement you are making with Giscle Systems under these Terms.\n
+You are not authorized to use OfferCam in any manner that results in a breach of these Terms.\n
+You must be at least 18 years old and with a valid driver’s license and insurance in the jurisdiction where you use OfferCam.\n
+You must comply with all applicable laws and regulations when using OfferCam, and you may only use OfferCam for lawful purposes.\n
+In the event that you are actively driving, you are not authorized to physically interact with OfferCam in any manner that negatively impacts your driving.  Specifically, do NOT let the use of OfferCam distract you from driving.  OfferCam is intended for use before or after the vehicle is in motion.\n
+If you are not in a safe driving condition (e.g. dizzy, nauseated, chemically impaired, sleep deprived, etc.) you are not authorized to use OfferCam.
+    </string>
+    <string name="terms_3">
+        When you install OfferCam on your mobile device, software will be downloaded.  So long as OfferCam is installed on your mobile device, Giscle Systems may automatically check the version of OfferCam that you are running and automatically download new versions of the software to your device.\n
+Subject to your compliance with the terms and conditions of these Terms, you have the limited, non-sublicenseable, temporary right to obtain and run a single copy of the software distributed by as solely to access the OfferCam service run by Giscle Systems.  In no event may you sublicense, copy, transfer, modify or make derivative works of the software, nor work around any technical limitations in the software you may encounter.  Giscle Systems may terminate your license to use the software at any point in time in its sole discretion. \n You may not \n(i) remove any copyright, trademark or other proprietary notices from any portion of OfferCam; \n(ii) reproduce, modify, distribute, sell or lease any part of the services provided by OfferCam;\nor (iii) reverse engineer or attempt to extract the source code of any software we provide, unless applicable laws prohibit these restrictions or you have our written permission to do so.
+    </string>
+    <string name="terms_4">
+        As between Giscle Systems, Pvt. Ltd. and you, Giscle Systems, Pvt. Ltd. or its licensors own and reserve all rights, title and interests in and to OfferCam and all hardware, software and other items used to provide OfferCam, other than the rights explicitly granted to you to use OfferCam in accordance with these Terms. No title to or ownership of any proprietary rights related to OfferCam is transferred to you pursuant to these Terms. All rights not explicitly granted to you are reserved by Giscle Systems, Pvt. Ltd.In the event that you provide comments, suggestions or recommendations to Giscle Systems, Pvt. Ltd. related to OfferCam (including, without limitation, regarding modifications, enhancements, improvements or other changes to OfferCam) (collectively, “Feedback”), you hereby grant to Giscle Systems, Pvt. Ltd. a world-wide, royalty-free, irrevocable, perpetual license to use and otherwise incorporate any Feedback provided.\n
+Giscle Systems, Pvt. Ltd. reserves the right to update OfferCam to add or remove features at any time.
+    </string>
+    <string name="terms_5">
+        OfferCam permits you to upload video and other content like GPS location data to Giscle Systems (\"User Content\"). By providing us with the User Content, you grant Giscle Systems, Pvt. Ltd. a worldwide, perpetual, irrevocable, transferrable, royalty-free license, with the right to sublicense, use, copy, distribute, modify, perform, create derivative works of or otherwise benefit from such User Content, without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.\n
+We may award points to end users who submit User Content.  The points are awarded based on internal algorithms that determine the relative value of the submitted User Content after its submission.  Estimated point values displayed in OfferCam are just that: non-binding estimates.  The actual point value is not available until after the User Content is reviewed and accepted.  Variables that can affect point values include how good the lighting is, the quality of the video, how many other copies of video of the same location Giscle Systems already has access to, and the timing of the recording vs. other User Content we have received. User-Provided Content that is not acceptable video footage will result in no points (e.g. too dark, not in compliance with the device mounting guidelines, etc.).\n
+Points may be redeemed for rewards as set forth at the rewards page in the OfferCam mobile application.  Rewards are only available on a temporary basis and may change or become unavailable at any time.\n
+You represent and warrant that neither the User Content nor your submission, uploading or otherwise making available of such User Content or Giscle Systems, Pvt. Ltd.\'s use of the User Content as permitted herein will infringe, misappropriate or violate a third party’s intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation. You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful or otherwise offensive, as determined by Giscle Systems, Pvt. Ltd. in its sole discretion, whether or not such material may be protected by law. Although we are not required to do so, we may access, review and delete User Content at any time, including to assess whether it violates these Terms.
+    </string>
+    <string name="terms_6">
+        You are responsible for any mobile charges that you may incur for using OfferCam. If you are unsure what those charges may be, you should consult your service provider before using OfferCam. We do not guarantee that OfferCam will not use cellular data. If you are worried about data usage, you should turn cellular data off on your smartphone\'s settings when recording video with OfferCam.\n
+Giscle Systems, Pvt. Ltd. might send you text (SMS) messages as part of the of your use of OfferCam. You may opt out of receiving text (SMS) messages from Giscle Systems, Pvt. Ltd. at any time by texting the word STOP to the sending number from the mobile device receiving the messages. Opting out of receiving text (SMS) messages may impact your use of OfferCam and could mean that you automatically accept updates to these Terms when they occur.  If you opt out of receiving text messages, be sure to visit these Terms (including the privacy policy) regularly to confirm that you understand and agree to the current version of these Terms.
+    </string>
+    <string name="terms_7">We reserve the right to suspend or terminate your access to OfferCam at any time in our sole discretion, with or without cause or notice, and without incurring liability of any kind. You realize that if you are suspended or terminated, you may no longer have access to the data that are stored through OfferCam.  In the event thatOfferCam determines in its sole discretion that points were awarded in connection with fraud, false activity, or other non-compliance with these Terms, OfferCam may remove any such points from the applicable account.</string>
+    <string name="terms_8_bold">GISCLE SYSTEMS, PVT. LTD. PROVIDES OFFERCAM “AS IS” “WITH ALL FAULTS” AND “AS AVAILABLE.” TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, Giscle Systems, Pvt. Ltd. MAKES SPECIFICALLY DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY THAT OFFERCAM WILL BE ERROR-FREE OR FREE OF HARMFUL COMPONENTS, THAT THE DATA YOU PROVIDE WILL BE SECURE OR NOT OTHERWISE LOST OR DAMAGED, OR ANY IMPLIED WARRANTY OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, AND ANY WARRANTY ARISING OUT OF ANY COURSE OF PERFORMANCE, COURSE OF DEALING OR USAGE OF TRADE. SOME JURISDICTIONS DO NOT ALLOW THE FOREGOING EXCLUSIONS. IN SUCH AN EVENT, SUCH EXCLUSION WILL NOT APPLY SOLELY TO THE EXTENT PROHIBITED BY APPLICABLE LAW.</string>
+    <string name="terms_9">TO THE MAXIMUM EXTENT PERMITTED BY LAW, GISCLE SYSTEMSPVT. LTD. AND OUR SHAREHOLDERS, EMPLOYEES, AFFILIATES, LICENSORS, AND SUPPLIERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR MULTIPLE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM: (I) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICES; (II) THE CONDUCT OR CONTENT OF OTHER USERS OR THIRD PARTIES ON OR THROUGH THE SERVICES; OR (III) UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR CONTENT, EVEN IF GISCLE SYSTEMSPVT. LTD. HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT WILL GISCLE SYSTEMSPVT. LTD.\’S AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICES EXCEED THE GREATER OF INR 1000.\n
+Giscle Systems, Pvt. Ltd. has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Giscle Systems, Pvt. Ltd. of the site. Use of any such linked website is at the user\'s own risk.
+</string>
+    <string name="terms_10">These terms and conditions are governed by and construed in accordance with the laws of Patna.  Any dispute, claim or controversy arising out of or relating to these Terms or the breach, termination, enforcement, interpretation or validity thereof, including the determination of the scope or applicability of this agreement to arbitrate, shall be determined by arbitration in Bihar, Patna. This clause shall not preclude parties from seeking provisional remedies in aid of arbitration from a court of appropriate jurisdiction.</string>
+    <string name="terms_11">
+        If you have any questions about these Terms, please contact us by email at <b><u>info@giscle.com</u></b>.
+    </string>
+</resources>
+
+
+

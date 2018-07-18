@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.organization.Giscle.giscle_app.Terms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+        <!--android:background="#000"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="6dp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="8dp"-->
+        <!--android:text="OfferCam Terms of Service"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="22sp"-->
+        <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Terms &amp; Services"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/main_string"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/main_string_bold"
+                android:textColor="#393636"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="1. Changes to these Terms"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="2. Use of the App"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="3. Software License"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="4. Our Proprietary Rights"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="5. User-Provided Content and Points"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="6. Data Charges &amp; Text Messages"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_6"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="7. Suspension and Termination of Use of OfferCam"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_7"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="8. No Warranty"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_8_bold"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="9. Limitation of Liability"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_9"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="10. Governing Law; Arbitration"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_10"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="Contact Us"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:text="@string/terms_11"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+            <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="6dp"-->
+            <!--android:fontFamily="sans-serif-medium"-->
+            <!--android:lineSpacingExtra="2dp"-->
+            <!--android:text="@string/mainIntro"-->
+            <!--android:padding="8dp"-->
+            <!--android:textColor="#514141"-->
+            <!--android:textDirection="ltr"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="1. PRIVACY PRACTICES AND POLICIES"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:text="@string/privicy_details_1"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="2. INFORMATION THAT MAY BE COLLECTED"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_2"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="3. COLLECTION OF INFORMATION"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_3"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="4 USE OF THE INFORMATION COLLECTED"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_4"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="5 SALE OF ASSETS, MERGER, ACQUISITION, BANKRUPTCY"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_5"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="6 COOKIES"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_6"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="7 TRANSFER OF INFORMATION"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_7"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="8 NON-DISCLOSURE OF INFORMATION"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_8"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="9 REASONABLE SECURITY PRACTICES AND PROCEDURES"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_9"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="10 EXCLUSION"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_10"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="11 DATA RETENTION"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_11"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="12 MINOR’S PRIVACY"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_12"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="13 OPT OUT PROCEDURES"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_13"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="14 OTHER LINKS AND WIDGETS"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_14"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="15 NOTIFICATION OF CHANGES"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_15"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="16 APPLICABLE LAW"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_16"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="17 GRIEVANCE REDRESSAL"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_17"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:text=""-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/terms_string_17"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="normal" />-->
+            <!--<TextView-->
+            <!--android:padding="8dp"-->
+            <!--android:layout_width="match_parent"-->
+
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="YOU HAVE READ THIS PRIVACY POLICY AND AGREE TO ALL OF THE PROVISIONS CONTAINED ABOVE"-->
+            <!--android:gravity="center|left"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

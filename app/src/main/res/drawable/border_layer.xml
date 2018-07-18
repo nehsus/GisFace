@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="270"
+                android:endColor="#111111"
+                android:startColor="#989898"
+                android:gradientRadius="360"
+                />
+            <corners android:bottomLeftRadius="40dp"
+                android:bottomRightRadius="40dp"
+                android:topRightRadius="25dp"
+                android:topLeftRadius="25dp"/>
+            <!--<stroke-->
+                <!--android:width="2dp"-->
+                <!--android:color="#ff207d94" />-->
+        </shape>
+    </item>
+    <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#fff" />
+            <corners android:bottomLeftRadius="40dp"
+                android:bottomRightRadius="40dp"
+                android:topRightRadius="25dp"
+                android:topLeftRadius="25dp"/>
+        </shape>
+    </item>
+
+</layer-list>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:shape="rectangle" >-->
+
+    <!--<gradient-->
+        <!--android:angle="270"-->
+        <!--android:centerColor="#e95a22"-->
+        <!--android:endColor="#ff00b5"-->
+        <!--android:startColor="#2f2f2f"-->
+        <!--/>-->
+
+    <!--&lt;!&ndash;<solid android:color="#000000"/>&ndash;&gt;-->
+    <!--<stroke-->
+        <!--android:width="20dp"-->
+        <!--android:color="#222222" />-->
+        <!--&lt;!&ndash;android:color="#f3f3f3" />&ndash;&gt;-->
+
+<!--</shape>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<gradient-->
+                <!--android:angle="270"-->
+                <!--android:endColor="#111111"-->
+                <!--android:centerColor="#f3f3f3"-->
+                <!--android:startColor="#989898"-->
+                <!--/>-->
+            <!--<corners-->
+                <!--android:bottomLeftRadius="50dp"-->
+                <!--android:bottomRightRadius="50dp"-->
+                <!--android:topLeftRadius="30dp"-->
+                <!--android:topRightRadius="30dp" />-->
+            <!--<size-->
+                <!--android:width="100dp"-->
+                <!--android:height="100dp" />-->
+            <!--<padding-->
+                <!--android:bottom="3dp"-->
+                <!--android:left="3dp"-->
+                <!--android:right="3dp"-->
+                <!--android:top="3dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="#f3f3f3" />-->
+
+        <!--</shape>-->
+    <!--</item>-->
+
+<!--</layer-list>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<item>-->
+    <!--<shape android:shape="rectangle">-->
+        <!--&lt;!&ndash;make a gradient background&ndash;&gt;-->
+        <!--<gradient android:angle="90"-->
+            <!--android:endColor="#111111"-->
+            <!--android:gradientRadius="90"-->
+            <!--android:startColor="#989898" android:type="linear" />-->
+        <!--&lt;!&ndash;apply a border around button&ndash;&gt;-->
+        <!--<stroke android:width="2dp" android:color="#006400" />-->
+        <!--&lt;!&ndash; make the button corners rounded&ndash;&gt;-->
+        <!--<corners android:radius="25dp" />-->
+    <!--</shape>-->
+<!--</item>-->
+<!--</selector>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">--><!--<item>--><!--<shape>--><!--<gradient--><!--android:angle="270"--><!--android:startColor="#000"--><!--android:centerColor="@android:color/transparent"--><!--android:centerX="0.01" />--><!--</shape>--><!--</item>--><!--<item>--><!--<shape>--><!--<gradient--><!--android:angle="90"--><!--android:startColor="#000"--><!--android:centerColor="@android:color/transparent"--><!--android:centerX="0.01" />--><!--</shape>--><!--</item>--><!--</layer-list>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >--><!--<item>--><!--<shape android:shape="rectangle" >--><!--<corners android:radius="20dp"/>--><!--<stroke  android:width="2dp"--><!--android:color="#50C0E9" />--><!--<solid android:color="@android:color/transparent" />--><!--</shape>--><!--</item>--><!--<item  android:bottom="2dp" >--><!--<shape android:shape="rectangle" >--><!--<stroke  android:width="2dp"--><!--android:color="#fff" />--><!--<solid android:color="@android:color/transparent" />--><!--</shape>--><!--</item>--><!--</layer-list>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >--><!--<item>--><!--<shape--><!--android:shape="rectangle">--><!--<solid android:color="#000" />-->
+
+    <!--</shape>--><!--</item>-->
+
+    <!--&lt;!&ndash; this mess is what we have to do to get a bottom border only. &ndash;&gt;--><!--<item android:top="-2dp"--><!--android:left="-2dp"--><!--android:right="-2dp"--><!--android:bottom="1px">--><!--<shape--><!--android:shape="rectangle">--><!--<stroke android:width="1dp" android:color="#fff" />--><!--<solid android:color="@null" />--><!--</shape>--><!--</item>-->
+
+    <!--</layer-list>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >--><!--<item--><!--android:bottom="1dp"--><!--android:left="-2dp"--><!--android:right="-2dp"--><!--android:top="-2dp">--><!--<shape android:shape="rectangle" >--><!--<stroke--><!--android:width="1dp"--><!--android:color="#FF000000" />-->
+
+    <!--<solid android:color="#00FFFFFF" />-->
+
+    <!--<padding android:left="10dp"--><!--android:right="10dp"--><!--android:top="10dp"--><!--android:bottom="10dp" />--><!--</shape>--><!--</item>-->
+
+    <!--</layer-list>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >--><!--<item>--><!--<shape--><!--android:shape="rectangle">--><!--<stroke android:width="1dp" android:color="#FF000000" />--><!--<solid android:color="#FFDDDDDD" />-->
+
+    <!--</shape>--><!--</item>-->
+
+    <!--<item android:top="1dp" android:bottom="1dp">--><!--<shape--><!--android:shape="rectangle">--><!--<stroke android:width="1dp" android:color="#FFDDDDDD" />--><!--<solid android:color="#00000000" />--><!--</shape>--><!--</item>-->
+
+    <!--</layer-list>--><!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >--><!--<item>--><!--<shape--><!--android:shape="rectangle">--><!--&lt;!&ndash; Set the border color of your layout here &ndash;&gt;--><!--<stroke android:width="1dp" android:color="#3AFB03" />--><!--<solid android:color="#3AFB03" />-->
+
+    <!--</shape>--><!--</item>-->
+
+    <!--&lt;!&ndash; This is for border bottom but--><!--you can change this according to your need &ndash;&gt;--><!--<item android:bottom="4dp" >--><!--<shape--><!--android:shape="rectangle">--><!--&lt;!&ndash; Set the background color of your layout here &ndash;&gt;--><!--<stroke android:width="2dp" android:color="#948787" />--><!--<solid android:color="#000000" />--><!--</shape>--><!--</item>-->
+
+    <!--</layer-list>-->
