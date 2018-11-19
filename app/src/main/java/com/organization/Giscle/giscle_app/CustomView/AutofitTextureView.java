@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.view.TextureView;
 
 /**
- * Created by sushen.kumaron 9/18/2017.
+ * Created by sushen.kumar on 7/18/2018.
  */
 
 public class AutofitTextureView extends TextureView {

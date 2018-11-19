@@ -12,7 +12,7 @@ import com.organization.Giscle.giscle_app.R;
 import com.organization.Giscle.giscle_app.Variable.CONSTANT;
 
 /**
- * Created by sushen.kumaron 9/24/2017.
+ * Created by asher.ansari on 9/24/2017.
  */
 
 public class Dialog_detail_video extends Dialog {

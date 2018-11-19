@@ -10,6 +10,7 @@ import android.hardware.Camera.Parameters;
 import android.hardware.Camera.PreviewCallback;
 import android.util.Log;
 import android.view.SurfaceHolder;
+
 /**
  * Created by Nehsus on 18/07/18.
  */

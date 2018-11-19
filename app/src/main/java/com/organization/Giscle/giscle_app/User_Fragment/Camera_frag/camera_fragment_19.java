@@ -63,6 +63,7 @@ public class camera_fragment_19 extends Fragment implements View.OnClickListener
 
     private Camera mCamera;
     Button stopButton;
+    Handler timeHandler = new Handler();
     FrameLayout cameraPreviewFrame;
     CameraPreview cameraPreview;
     MediaRecorder mediaRecorder;
@@ -266,46 +267,63 @@ public class camera_fragment_19 extends Fragment implements View.OnClickListener
         }
     }
 
+
     public void startRecording() {
-//        Log.e("VideoCaptureActivity", "startRecording");
-//        Log.d("abcd", "startRecording()");
-        // we need to unlock the camera so that mediaRecorder can use it
-        mCamera.unlock(); // unnecessary in API >= 14
-        // now we can initialize the media recorder and set it up with our
-        // camera
-        mediaRecorder = new MediaRecorder();
-        mediaRecorder.setCamera(this.mCamera);
-        mediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
-        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.DEFAULT);
-        mediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.DEFAULT);
-        mediaRecorder.setVideoEncodingBitRate(512 * 1000);
-        mediaRecorder.setVideoFrameRate(15);
+        long t= System.currentTimeMillis();
+        long end = t+15000;
+        mCamera.unlock();
+        try {
+            while (System.currentTimeMillis() < end) {
+
+                timeHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // unnecessary in API >= 14
+                        // now we can initialize the media recorder and set it up with our
+                        // camera
+                        mediaRecorder = new MediaRecorder();
+                        mediaRecorder.setCamera(mCamera);
+                        mediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
+                        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.DEFAULT);
+                        mediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.DEFAULT);
+                        mediaRecorder.setVideoEncodingBitRate(512 * 1000);
+                        mediaRecorder.setVideoFrameRate(15);
 //        mediaRecorder.setOutputFile(initFile().getAbsolutePath());
-        if (mNextVideoAbsolutePath == null || mNextVideoAbsolutePath.isEmpty()) {
-            mNextVideoAbsolutePath = getVideoFilePath();
-        }
+                        if (mNextVideoAbsolutePath == null || mNextVideoAbsolutePath.isEmpty()) {
+                            mNextVideoAbsolutePath = getVideoFilePath();
+                        }
 //        mediaRecorder.setOutputFile(mNextVideoAbsolutePath);
-        mediaRecorder.setOutputFile(mNextVideoAbsolutePath);
+                        mediaRecorder.setOutputFile(mNextVideoAbsolutePath);
 
 //        mediaRecorder.setOrientationHint(90);
 
-        mediaRecorder.setPreviewDisplay(this.cameraPreview.getHolder().getSurface());
-        try {
-            mediaRecorder.prepare();
-            // start the actual recording
-            // throws IllegalStateException if not prepared
-            mediaRecorder.start();
-            setCamFocusMode();
-            mEditor.putString(LocationService_service_19.STARAT_TIME, getCurrentTime()).commit();
-            timerStart();
-            Toast.makeText(getActivity(), "Start Recording", Toast.LENGTH_SHORT).show();
-            // enable the stop button by indicating that we are recording
+                        mediaRecorder.setPreviewDisplay(cameraPreview.getHolder().getSurface());
+                        try {
+                            mediaRecorder.prepare();
+                            // start the actual recording
+                            // throws IllegalStateException if not prepared
+                            mediaRecorder.start();
+                            setCamFocusMode();
+                            mEditor.putString(LocationService_service_19.STARAT_TIME, getCurrentTime()).commit();
+                            timerStart();
+                            Toast.makeText(getActivity(), "Start Recording", Toast.LENGTH_SHORT).show();
+                            // enable the stop button by indicating that we are recording
 //            this.toggleButtons(true);
-        } catch (Exception e) {
+                        } catch (Exception e) {
 //            Log.wtf("mCamera", "Failed to prepare MediaRecorder", e);
-            Toast.makeText(getActivity(), "Cannot Start Video recording", Toast.LENGTH_SHORT).show();
-            this.releaseMediaRecorder();
+                            Toast.makeText(getActivity(), "Cannot Start Video recording", Toast.LENGTH_SHORT).show();
+                            releaseMediaRecorder();
+                        }
+
+                    }
+                }, 10000); //Hopefully this stops shit at ten seconds
+
+                Thread.sleep(10000);
+            }
+        }catch (Exception c){
+            System.out.println( "plsidk what happ");
         }
+
     }
 
 

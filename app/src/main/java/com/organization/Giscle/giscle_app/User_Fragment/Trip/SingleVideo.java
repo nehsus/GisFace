@@ -217,21 +217,6 @@ public class SingleVideo extends Fragment
         List<LatLng> points = extractCoordinate(lat, lon);
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
 
-//        for (int i = 0; i < points.size() - 1; i++) {
-//            LatLng src = points.get(i);
-//            LatLng dest = points.get(i + 1);
-
-        // mMap is the Map Object
-//            Polyline line = googleMap.addPolyline(
-//                    new PolylineOptions().add(
-//                            new LatLng(src.latitude, src.longitude),
-//                            new LatLng(dest.latitude, dest.longitude)
-//                    ).width(2).color(Color.BLUE).geodesic(true)
-//            );
-
-
-//        double LAT = Double.parseDouble(recordVariable.getInitail_lat());
-//        double LON = Double.parseDouble(recordVariable.getIntial_long());
         MarkerOptions startMarker = new MarkerOptions()
                 .position(points.get(0))
                 .title("Starting Point");
@@ -315,7 +300,7 @@ public class SingleVideo extends Fragment
         FirebaseStorage storage = FirebaseStorage.getInstance();
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
-        StorageReference storageref = storage.getReferenceFromUrl("gs://offercamfinalapp-9cbeb.appspot.com").child(auth.getUid()).child(filename1 + ".mp4");
+        StorageReference storageref = storage.getReferenceFromUrl("gs://giscle-facial-app.appspot.com").child(auth.getUid()).child(filename1 + ".mp4");
 //        progressBar.setVisibility(View.VISIBLE);
         btnUpload.setEnabled(false);
 //        System.out.println(filename);

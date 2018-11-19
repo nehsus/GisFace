@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OfferCam</string>
+    <string name="app_name">Facalyser</string>
     <!--<string name="facebook_app_id"> GISCLE APP ID IS : 272727860162162</string>-->
     <string name="facebook_app_id">272727860162162</string>
     <string name="fb_login_protocol_scheme">fb272727860162162</string>
@@ -23,7 +23,10 @@
     <string name="flipkart_shopping">Flipkart Shopping</string>
     <string name="paytm_text">Paytm recharge</string>
 
-
+    <string name="Instructions">Please ensure the following before recording:\n
+    - Enter the TAG Description Correctl\n
+    - Take a ten second video of the Object in all perspectives.\n
+    - Ensure the video is no longer than ten seconds.</string>
     <string name="privicy_1">
         Your privacy is important to us. This privacy policy is intended to give you confidence in the privacy and security of the personal information we obtain from you whether you are using Giscle Systems, Pvt. Ltd. products such as \"OfferCam\", uploading information to one of Giscle Systems, Pvt. Ltd.\'s websites (“Websites”), such as www.giscle.com, downloading and using our applications, or merely visiting our Websites.\n
 We are not responsible for any use of your personal information you provide to third-party applications or websites that may be accessed via OfferCam or Websites. We recommend that you review the privacy policy of any third-party applications or websites that you use.

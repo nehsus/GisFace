@@ -204,7 +204,8 @@
                         android:text="Earn Points"
                         android:textColor="#000"
                         android:textSize="22sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
 
                     <TextView
                         android:id="@+id/tv_earn_point_profile"
@@ -218,7 +219,8 @@
                         android:text="0"
                         android:textColorHint="#323136"
                         android:textSize="22sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -236,7 +238,8 @@
                         android:text="Redeem"
                         android:textColor="#000"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>

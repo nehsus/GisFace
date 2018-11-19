@@ -4,12 +4,14 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.view.View;
+import android.view.ViewGroup;
+import java.lang.Runnable;
 import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -53,6 +55,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -88,7 +91,7 @@ import static com.organization.Giscle.giscle_app.User_Fragment.Camera_frag.Locat
 import static com.facebook.FacebookSdk.getApplicationContext;
 
 /**
- * Created by sushen.kumaron 9/19/2017.
+ * Created by sushen.kumar on 9/19/2017.
  */
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -97,6 +100,7 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
     private static final int SENSOR_ORIENTATION_INVERSE_DEGREES = 270;
     private static final SparseIntArray DEFAULT_ORIENTATIONS = new SparseIntArray();
     private static final SparseIntArray INVERSE_ORIENTATIONS = new SparseIntArray();
+
 
     private static final String TAG = "Camera2VideoFragment";
     private static final int REQUEST_VIDEO_PERMISSIONS = 1;
@@ -212,6 +216,7 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
      * The {@link android.util.Size} of camera preview.
      */
     private Size mPreviewSize;
+
 
     /**
      * The {@link android.util.Size} of video recording.
@@ -391,7 +396,7 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
     private static final float LOCATION_DISTANCE = 0;
     static boolean status;
     static double distance_v21 = 0.0;
-    static TextView points, speed;
+    static TextView points, speed, camVariable;
     static long startTime, endTime;
     static int p = 0;
 
@@ -461,6 +466,7 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
         mEditor = mPreferences.edit();
         speed = (TextView) view.findViewById(R.id.speed_video);
         points = (TextView) view.findViewById(R.id.points_video);
+        camVariable = (TextView) view.findViewById(R.id.descy);
 //        speedTExt.setText("Speed: 0 m/sec");
         checkGps();
         tv_timer = (TextView) view.findViewById(R.id.tv_timeVideo);
@@ -477,19 +483,9 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
             bindService();
         }
 
-        //HERE IS SOCKET IO :)
-        WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        WifiInfo wifIinfo = wifiManager.getConnectionInfo();
-        int address = wifIinfo.getIpAddress();
-        String ipAddressStr = "127.0.0.1";
-                // ((address >> 127) & 0xFF) + "."
-                //+ ((address >> 0) & 0xFF) + "." + ((address >> 0) & 0xFF)
-                //+ "." + ((address >> 1) & 0xFF);
-        //TextView ipText =  view.findViewById(R.id.ipText);
-        //ipText.setText(ipAddressStr);
+        mEchoText = view.findViewById(R.id.echoText);
+        mLayout = view.findViewById(R.id.texture_v19);
 
-        mEchoText =  view.findViewById(R.id.echoText);
-        mLayout =  view.findViewById(R.id.texture_v19);
 
         mSockMan = new SocketClass(this);
 
@@ -582,15 +578,67 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
 
     }
 
+    final Context context = this.getActivity();
+    private Button button;
+    private EditText descText;
+    Handler stopDelay = new Handler();
+    String lol = "";
+
+    public static void setDescription(Context context, String desc) {
+        SharedPreferences prefs = context.getSharedPreferences("giscle", 0);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("TAG", desc);
+        editor.commit();
+    }
+
+    public static String getDescription(Context context) {
+        SharedPreferences prefs = context.getSharedPreferences("giscle", 0);
+        return prefs.getString("TAG", "");
+
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.video: {
+                String content = descText.getText().toString();
+                long t1 = System.currentTimeMillis();
+                long end = t1 + 10000;
                 if (mIsRecordingVideo) {
                     stopRecordingVideo();
                 } else {
-                    startRecordingVideo();
+                    if (content == null) {
+                        Log.w("myApp", "NO TAG ENTERED!\n");
+                        setDescription(this.getContext(), content);
+
+                    } else {
+
+                        try {
+                            lol = content;
+                            stopDelay.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    stopRecordingVideo();
+                                }
+                            }, 10000);
+                            startRecordingVideo();
+                        } catch (Exception unname) {
+                            Log.w("penis", "ayyoWhynomName");
+                        }
+                    }
+
+                    // set prompts.xml to alertdialog builder
+
+                    //gets you the contents of edit text
+                    //tvTextView.setText(content);
+                    // set dialog message
+
+                    // add button listener
+
+
                 }
+
+
                 break;
             }
             case R.id.info: {
@@ -908,88 +956,127 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
     }
 
     private String filePath = null;
+    private Context bun = this.getContext();
 
     private String getVideoFilePath(Context context) {
 //        final File dir = context.getExternalFilesDir(null);
-        File myDir = new File(Environment.getExternalStorageDirectory() + "/Giscle Video");
+        File file = new File(Environment.getExternalStorageDirectory() + "/Giscle Video");
 
-        if (!myDir.exists()) {
-            myDir.mkdir();
+        if (!file.exists()) {
+            file.mkdir();
         }
         Random generator = new Random();
-        Log.e("FIle", myDir.getAbsolutePath());
         int n = 9000000;
         n = generator.nextInt(n) + 1000000;
-        String fname = "video-" + n;
-        File file = new File(myDir, fname);
+        String fname = "video-" + n + ".mp4";
+        File file1 = new File(file, fname);
         mfile_name = fname;
-//        mEditor.putString(FILE_NAME, fname);
-//        filePath = "Giscle Video/" + fname + ".mp4";
+        filePath = file1.getAbsolutePath();
+
+        return (file1 == null ? "" : file1.getAbsolutePath());
+       /* Log.e("FIle", myDir.getAbsolutePath());
+        String fname = "";
+        File file = new File(myDir, fname);
+
+        Log.w("BUNBUNBUNBUN\n\n\n\n\n", "what the fuck are you doing\n\n\n");
+
+        mfile_name = fname;
         filePath = file.getAbsolutePath();
-        return (myDir == null ? "" : (myDir.getAbsolutePath() + "/"))
-                + fname + ".mp4";
-
 //                + System.currentTimeMillis() + ".mp4";
+        return (myDir == null ? "" : (myDir.getAbsolutePath() + "/"))
+                + fname + ".mp4";*/
     }
 
+    /*public void howText() {
+        final String fname = "";
+        //ides view
+        final Handler handler2 = new Handler();
+        handler2.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                final String lel = "";
+                camVariable.setText(getDescription(bun));
+                final String lel2 = lel + camVariable.getText().toString();// Shows view
+                final String please = fname + lel2;
+            }
+
+        }, 3000);
+
+        // After 3 seconds
+    }*/
+
+    Handler timeHandler = new Handler();
     private void startRecordingVideo() {
-        if (null == mCameraDevice || !mTextureView.isAvailable() || null == mPreviewSize) {
-            return;
-        }
-        try {
-            closePreviewSession();
-            setUpMediaRecorder();
-            SurfaceTexture texture = mTextureView.getSurfaceTexture();
-            assert texture != null;
-            texture.setDefaultBufferSize(mPreviewSize.getWidth(), mPreviewSize.getHeight());
-            mPreviewBuilder = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_RECORD);
-            List<Surface> surfaces = new ArrayList<>();
+        timeHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                stopRecordingVideo();
+            }
+        }, 10000);
 
-            // Set up Surface for the camera preview
-            Surface previewSurface = new Surface(texture);
-            surfaces.add(previewSurface);
-            mPreviewBuilder.addTarget(previewSurface);
-
-            // Set up Surface for the MediaRecorder
-            Surface recorderSurface = mMediaRecorder.getSurface();
-            surfaces.add(recorderSurface);
-            mPreviewBuilder.addTarget(recorderSurface);
-
-            // Start a capture session
-            // Once the session starts, we can update the UI and start recording
-            mCameraDevice.createCaptureSession(surfaces, new CameraCaptureSession.StateCallback() {
-
-                @Override
-                public void onConfigured(@NonNull CameraCaptureSession cameraCaptureSession) {
-                    mPreviewSession = cameraCaptureSession;
-                    timerStart();
-                    updatePreview();
-                    getActivity().runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            // UI
-                            mButtonVideo.setText(R.string.stop);
-                            mIsRecordingVideo = true;
-                            mEditor.putString(STARAT_TIME, getCurrentTime()).commit();
-                            // Start recording
-                            mMediaRecorder.start();
+                        if (null == mCameraDevice || !mTextureView.isAvailable() || null == mPreviewSize) {
+                            return;
                         }
-                    });
-                }
+                        try {
+                            closePreviewSession();
+                            setUpMediaRecorder();
+                            SurfaceTexture texture = mTextureView.getSurfaceTexture();
+                            assert texture != null;
+                            texture.setDefaultBufferSize(mPreviewSize.getWidth(), mPreviewSize.getHeight());
+                            mPreviewBuilder = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_RECORD);
+                            List<Surface> surfaces = new ArrayList<>();
 
-                @Override
-                public void onConfigureFailed(@NonNull CameraCaptureSession cameraCaptureSession) {
-                    Activity activity = getActivity();
-                    if (null != activity) {
-                        Toast.makeText(activity, "Failed to record", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            }, mBackgroundHandler);
-        } catch (CameraAccessException | IOException e) {
-            e.printStackTrace();
+                            // Set up Surface for the camera preview
+                            Surface previewSurface = new Surface(texture);
+                            surfaces.add(previewSurface);
+                            mPreviewBuilder.addTarget(previewSurface);
+
+                            // Set up Surface for the MediaRecorder
+                            Surface recorderSurface = mMediaRecorder.getSurface();
+                            surfaces.add(recorderSurface);
+                            mPreviewBuilder.addTarget(recorderSurface);
+
+                            // Start a capture session
+                            // Once the session starts, we can update the UI and start recording
+                            mCameraDevice.createCaptureSession(surfaces, new CameraCaptureSession.StateCallback() {
+
+                                @Override
+                                public void onConfigured(@NonNull CameraCaptureSession cameraCaptureSession) {
+                                    mPreviewSession = cameraCaptureSession;
+                                    timerStart();
+                                    updatePreview();
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            // UI
+                                            mButtonVideo.setText(R.string.stop);
+                                            mIsRecordingVideo = true;
+                                            mEditor.putString(STARAT_TIME, getCurrentTime()).commit();
+                                            // Start recording
+                                            mMediaRecorder.start();
+                                        }
+                                    });
+                                }
+
+                                @Override
+                                public void onConfigureFailed(@NonNull CameraCaptureSession cameraCaptureSession) {
+                                    Activity activity = getActivity();
+                                    if (null != activity) {
+                                        Toast.makeText(activity, "Failed to record", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }, mBackgroundHandler);
+                        } catch (CameraAccessException | IOException e) {
+                            e.printStackTrace();
+                        }
+
+                    //Hopefully this stops shit at ten seconds
+
+
+
+
         }
-
-    }
 
     private void closePreviewSession() {
         if (mPreviewSession != null) {
@@ -1031,13 +1118,10 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
             e.printStackTrace();
         }
 
-//        mMediaRecorder.stop();
-//        mMediaRecorder.reset();
-
         Activity activity = getActivity();
         if (null != activity) {
-           Toast.makeText(activity, "Video Recorded!: " + mNextVideoAbsolutePath, Toast.LENGTH_SHORT).show();
-            Log.d(TAG, "Video Recorded: " + mNextVideoAbsolutePath);
+           Toast.makeText(activity, "Video Uploaded: " + mNextVideoAbsolutePath, Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "Video Uploaded to firebase!");
         }
         mNextVideoAbsolutePath = null;
         Intent i = new Intent(getApplicationContext(), UserDashboard.class);
@@ -1106,7 +1190,6 @@ public class camera_fragment extends Fragment implements View.OnClickListener, F
         return time;
 
     }
-
 
     /**
      * Compares two {@code Size}s based on their areas.

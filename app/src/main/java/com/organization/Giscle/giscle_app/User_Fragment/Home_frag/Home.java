@@ -142,7 +142,7 @@ public class Home extends Fragment implements View.OnClickListener {
 
     private void showExitDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Want to close ?");
+        builder.setTitle("Want to exit?");
         builder.setCancelable(true);
         builder.setMessage("Do you want to close Offercam ?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {

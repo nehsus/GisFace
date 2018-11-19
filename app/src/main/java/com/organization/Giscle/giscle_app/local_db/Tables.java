@@ -3,7 +3,7 @@ package com.organization.Giscle.giscle_app.local_db;
 import android.provider.BaseColumns;
 
 /**
- * Created by sushen.kumaron 9/17/2017.
+ * Created by asher.ansari on 9/17/2017.
  */
 
 public class Tables implements BaseColumns {

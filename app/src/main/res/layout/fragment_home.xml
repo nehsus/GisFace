@@ -44,37 +44,67 @@
 
                 <Button
                     android:id="@+id/record_trip_btn"
-                    style="@style/btnStyle"
+                    style="@*android:style/Widget.Material.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top"
                     android:layout_margin="10dp"
                     android:paddingBottom="6dp"
                     android:paddingTop="6dp"
-                    android:text="Recorded Trip"
-                    android:textAllCaps="true"
-                    android:textColor="#000"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:text="Previously Recorded"
+                    android:textAppearance="@*android:style/TextAppearance.Material.Large" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/descText"
+                        style="@*android:style/Widget.Material.Light.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Enter tag!"
+                        android:inputType="text|textEmailAddress|textShortMessage|textPersonName"
+                        android:singleLine="true"
+                        android:textAppearance="@style/NavDrawerTextStyle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Instructions"
+                        android:textAppearance="@*android:style/TextAppearance.Material.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/Instructions"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/start_trip_btn"
-                    style="@style/btnStyle"
+                    style="@*android:style/Widget.Material.Button.ButtonBar.AlertDialog"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:elevation="4dp"
                     android:paddingBottom="6dp"
                     android:paddingTop="6dp"
-                    android:text="Start Trip"
-                    android:textAllCaps="true"
-                    android:textColor="#000"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:text="Record"
+                    android:textAppearance="@*android:style/TextAppearance.Leanback.FormWizard.Large" />
+
             </LinearLayout>
 
         </RelativeLayout>

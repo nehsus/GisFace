@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,9 +17,8 @@
         android:id="@+id/texture_v19"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" >
+        android:layout_alignParentTop="true">
 
     </FrameLayout>
     <!--<Button-->
@@ -77,6 +77,20 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/cameraDesc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:textAppearance="@*android:style/TextAppearance.Material.SearchResult"
+            android:textColor="#C0FCFF"
+            android:textSize="12sp"
+            android:typeface="normal"
+            android:visibility="visible" />
+
+        <TextView
             android:id="@+id/points_video_v19"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -95,7 +109,8 @@
             android:layout_marginTop="5dp"
             android:drawableLeft="@drawable/recording"
             android:gravity="center"
-            android:text="@string/stop" />
+            android:text="@string/stop"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/speed_video_v19"

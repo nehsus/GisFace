@@ -19,7 +19,7 @@ import static com.organization.Giscle.giscle_app.Variable.CONSTANT.COUPON_NUMBER
 import static com.organization.Giscle.giscle_app.Variable.CONSTANT.INR_COUPON;
 
 /**
- * Created by sushen.kumaron 10/5/2017.
+ * Created by asher.ansari on 10/5/2017.
  */
 
 public class Coupon_Dialog_box extends Dialog {

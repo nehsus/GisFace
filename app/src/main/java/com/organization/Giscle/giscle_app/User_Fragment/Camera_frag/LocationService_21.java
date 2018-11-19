@@ -230,7 +230,7 @@ public class LocationService_21 extends Service implements
 //            String details = "Actual Distance: a: " + a + ", in Meters: " + abc + ", and Insplit form: " + distanceSplit[0] + "." + distanceSplit[1] + " KM and Points: " + points;
 //            Log.e("details: ", details);
 //            Toast.makeText(this, "" + details, Toast.LENGTH_SHORT).show();
-            camera_fragment.points.setText("Points: " + points);
+            //camera_fragment.points.setText("Points: " + points);
 
             if (mCurrentLocation.hasSpeed()) {
                 double speed = mCurrentLocation.getSpeed() * 18 / 5;

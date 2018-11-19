@@ -32,8 +32,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="00:00:00"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+            android:textAppearance="@*android:style/TextAppearance.Material.Title.Inverse" />
 
     </LinearLayout>
 
@@ -64,7 +63,8 @@
             android:paddingLeft="20dp"
             android:text="Points"
             android:textColor="#fff"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/video"
@@ -74,7 +74,8 @@
             android:layout_marginTop="5dp"
             android:drawableLeft="@drawable/recording"
             android:gravity="center"
-            android:text="@string/stop" />
+            android:text="@string/stop"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/speed_video"
@@ -83,9 +84,21 @@
             android:layout_weight="1"
             android:gravity="right|center"
             android:paddingRight="20dp"
-            android:text="0 km/hr"
-            android:textColor="#fff"
-            android:textSize="28sp" />
+            android:text="0 kmph"
+            android:textAppearance="@*android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/descy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingRight="20dp"
+            android:text="0 kmph"
+            android:textAppearance="@*android:style/TextAppearance.Material.DatePicker.YearLabel"
+            android:visibility="visible" />
 
         <ImageButton
             android:id="@+id/info"

@@ -13,7 +13,7 @@ import com.organization.Giscle.giscle_app.Variable.Trip_record_variable;
 import java.util.List;
 
 /**
- * Created by sushen.kumaron 9/28/2017.
+ * Created by asher.ansari on 9/28/2017.
  */
 
 public class Trip_adapter extends BaseAdapter {
